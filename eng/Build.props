@@ -51,6 +51,11 @@
                       $(RepoRoot)src\Components\WebView\Samples\BlazorWinFormsApp\**\*.csproj;
                       $(RepoRoot)src\Components\WebView\Samples\BlazorWpfApp\**\*.csproj;
                       " />
+
+    <!-- This project won't build consistently until the SDK is newer than 6.0.100-preview.5.21230.2
+         TODO: Remove this exclusion: https://github.com/dotnet/aspnetcore/issues/32788
+    <ProjectToExclude Include="
+                      $(RepoRoot)src\Components\benchmarkapps\Wasm.Performance\TestApp\Wasm.Performance.TestApp.csproj" />
   </ItemGroup>
 
   <Choose>
